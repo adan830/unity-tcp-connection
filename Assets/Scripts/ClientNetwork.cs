@@ -18,10 +18,10 @@ public class ClientNetwork : MonoBehaviour {
             if (Network.peerType == NetworkPeerType.Client) {
                 GUI.Label(new Rect(100, 100, 150, 25), "client");
  
-                if (GUI.Button(new Rect(100, 125, 150, 25), "Logut"))
+                if (GUI.Button(new Rect(100, 125, 150, 25), "Logout"))
                     Network.Disconnect();
  
-                if (GUI.Button(new Rect(100, 150, 150, 25), "SendHello to server"))
+                if (GUI.Button(new Rect(100, 150, 150, 25), "Send Hello to server"))
                     SendInfoToServer();
             }
         }
